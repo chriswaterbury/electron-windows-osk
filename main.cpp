@@ -505,22 +505,22 @@ NAN_METHOD(GetSystemMenuHeight) {
 NAN_METHOD(OSKSetPosition) {
 	Nan::HandleScope scope;
 	try {
-		if (!info[0]->IsUndefined()) {
-			unsigned int left = info[0]->Uint32Value();
-			setRegistryValue("WindowLeft", left);
-		}
-		if (!info[1]->IsUndefined()) {
-			unsigned int top = info[1]->Uint32Value();
-			setRegistryValue("WindowTop", top);
-		}
-		if (!info[2]->IsUndefined()) {
-			unsigned int width = info[2]->Uint32Value();
-			setRegistryValue("WindowWidth", width);
-		}
-		if (!info[3]->IsUndefined()) {
-			unsigned int height = info[3]->Uint32Value();
-			setRegistryValue("WindowHeight", height);
-		}
+// 		if (!info[0]->IsUndefined()) {
+// 			unsigned int left = info[0]->Uint32Value();
+// 			setRegistryValue("WindowLeft", left);
+// 		}
+// 		if (!info[1]->IsUndefined()) {
+// 			unsigned int top = info[1]->Uint32Value();
+// 			setRegistryValue("WindowTop", top);
+// 		}
+// 		if (!info[2]->IsUndefined()) {
+// 			unsigned int width = info[2]->Uint32Value();
+// 			setRegistryValue("WindowWidth", width);
+// 		}
+// 		if (!info[3]->IsUndefined()) {
+// 			unsigned int height = info[3]->Uint32Value();
+// 			setRegistryValue("WindowHeight", height);
+// 		}
 		info.GetReturnValue().Set(Nan::True());
 	}
 	catch (...) {
